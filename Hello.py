@@ -17,10 +17,12 @@ from streamlit.logger import get_logger
 import pandas as pd
 
 LOGGER = get_logger(__name__)
-#st.write("# Welcome to Streamlit! 👋")
-st.write("# Petroleo agora vai! 👋")
+
+st.write("# Petroleo agora vai! :oil_drum: :dollar: ")
+petroleo_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/BDBase.csv", sep=';')
 previsao_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/base_predicao.csv", sep=';')
-st.line_chart(data=previsao_base['yhat'])
+st.write("# Tabela de preços do petroleo ao longo dos anos! 👋")
+st.dataframe(data=petroleo_base['valor'])
 st.dataframe(previsao_base['yhat'])
 
 
