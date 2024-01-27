@@ -18,7 +18,7 @@ import pandas as pd
 
 LOGGER = get_logger(__name__)
 
-st.write("# Petroleo agora vai! :oil_drum: :dollar: ")
+st.write("# MVP Petroleo! :oil_drum: :dollar: ")
 petroleo_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/BDBase.csv", sep=';')
 previsao_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/base_predicao.csv", sep=';')
 
