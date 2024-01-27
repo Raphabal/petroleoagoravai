@@ -21,10 +21,13 @@ LOGGER = get_logger(__name__)
 st.write("# Petroleo agora vai! :oil_drum: :dollar: ")
 petroleo_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/BDBase.csv", sep=';')
 previsao_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/base_predicao.csv", sep=';')
-st.write("# Tabela de preços do petroleo ao longo dos anos! 👋")
+st.write(" Tabela de preços do petroleo ao longo dos anos! 👋")
 st.dataframe(data=petroleo_base['valor'])
 st.dataframe(previsao_base['yhat'])
-
+st.write(" grafico de preços do petroleo ao longo dos anos! 👋")
+st.line_chart(data=petroleo_base['valor'])
+st.write(" grafico previsao! 👋")
+st.line_chart(data=previsao_base['yhat'])
 
 
 def run():
