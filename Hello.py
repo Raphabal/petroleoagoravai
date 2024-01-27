@@ -21,6 +21,7 @@ LOGGER = get_logger(__name__)
 st.write("# Petroleo agora vai! 👋")
 previsao_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchallenge04deploy/main/base_predicao.csv", sep=';')
 st.line_chart(data=previsao_base['yhat'])
+st.dataframe(previsao_base['yhat'])
 
 
 
