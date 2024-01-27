@@ -37,7 +37,7 @@ st.dataframe(previsao_base['yhat'])
 
 def run():
     st.set_page_config(
-        page_title="Hello",
+        page_title="MVP Petróleo",
         page_icon="👋",
     )
 
