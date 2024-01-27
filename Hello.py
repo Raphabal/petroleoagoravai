@@ -24,8 +24,8 @@ previsao_base = pd.read_csv("https://raw.githubusercontent.com/Raphabal/techchal
 
 
 st.write("## Grafico de preços do petroleo ao longo dos anos! :chart_with_upwards_trend:")
-#st.line_chart(data=petroleo_base['valor'])
-st.line_chart(data=petroleo_base)
+st.line_chart(data=petroleo_base['valor'])
+#st.line_chart(data=petroleo_base)
 
 st.write("## Grafico previsao! :chart:")
 st.line_chart(data=previsao_base['yhat'])
